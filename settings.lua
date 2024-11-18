@@ -136,6 +136,26 @@ data:extend({
 data:extend({
     {
         type = "bool-setting",
+        name = "chinese-enable-burner-generator",
+        setting_type = "startup",
+        order = "re",
+        default_value = false
+    }
+})
+
+data:extend({
+    {
+        type = "bool-setting",
+        name = "chinese-enable-loader",
+        setting_type = "startup",
+        order = "zx",
+        default_value = false
+    }
+})
+
+data:extend({
+    {
+        type = "bool-setting",
         name = "chinese-reach-enable",
         setting_type = "runtime-global",
         order = "dd",
@@ -185,3 +205,17 @@ data:extend({
         default_value = "关闭"
     }
 })
+
+
+if mods['bobinserters'] then
+
+    data:extend({
+        {
+            type = "bool-setting",
+            name = "chinese-enable-bob",
+            setting_type = "startup",
+            order = "bob",
+            default_value = false
+        }
+    })
+end
